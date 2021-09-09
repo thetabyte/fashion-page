@@ -1,0 +1,380 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*border reboot???*/
+
+body {
+    font-family: 'open sans', 'sans-serif';
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.row {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-100 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.row-column {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-font {
+    font-family: 'play display','serif';
+}
+
+header {
+    width: 100;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fff;
+    padding: 60px;
+    background-image: url('../img/banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-heading {
+    font-style: italic;
+    padding: 0 2rem;
+}
+
+.banner-text {
+    font-size: 0.9rem;
+    font-weight: normal;
+    background-color: #fff;
+    color: #000;
+    padding: 30px;
+}
+
+.annon-sect {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: #e9b1b3;
+    color: #fff;
+}
+
+.annon {
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.annon span {
+    font-size: 6rem;
+    line-height: 0;
+    margin-bottom: 15px;
+}
+
+.annon-sect p {
+    width: 50%;
+    font-size: 0.8rem;
+}
+
+
+.gallery .img-container {
+    height: 450px;
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery .gallery-img-1 {
+    background-image: url(../img/gallery-1.jpeg);
+}
+
+.gallery .gallery-img-2 {
+    background-image: url(../img/gallery-2.jpeg);
+}
+
+.gallery .gallery-img-3 {
+    background-image: url(../img/gallery-3.jpeg);
+}
+
+.gallery .gallery-img-4 {
+    background-image: url(../img/gallery-4.jpeg);
+}
+
+.gallery .gallery-img-5 {
+    background-image: url(../img/gallery-5.jpeg);
+}
+
+.gallery .gallery-img-6 {
+    background-image: url(../img/gallery-6.jpeg);
+}
+
+.coming-soon {
+    background-color: #e9b1b3;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.coming-soon .row-column-100 {
+    justify-content: center;
+}
+
+.coming-soon .coming-soon-heading,
+.coming-soon .coming-soon-text,
+.coming-soon .coming-soon-form {
+    text-align: center;
+}
+
+.coming-soon .coming-soon-heading {
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.coming-soon .coming-soon-text {
+    font-size: 1.3rem;
+}
+
+.coming-soon .coming-soon-form {
+    margin-top: 35px;
+}
+
+.coming-soon-form .row-100 {
+    justify-content: center;
+}
+
+.coming-soon-form .input-container {
+    display: flex;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.input-container .text-input,
+.input-container .form-btn {
+    padding: 12px 10px;
+    border: unset;
+    border-radius: 20px;
+}
+
+.input-container .form-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.article {
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.article-img-cont, .article-txt-cont {
+    height: 35rem;
+    display: flex;
+    align-items: center;
+}
+
+.article-img-cont {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 8%;
+    /*border: 1px solid blue; why is the flex basis making the 
+    picture shoot out its cont at 40%? */
+}
+
+.article-img-cont .article-img {
+    width: 100%;
+}
+
+.article-txt-cont {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 55%;
+    padding: 1.3rem;
+}
+
+.article-txt-cont .article-txt {
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+.slide {
+    padding: 3.5rem;
+    background-color: #e9b1b3;
+    color: #fff;
+}
+
+.slide .row-100 {
+    justify-content: center;
+}
+
+.slide-head {
+    font-size: 3.5rem;
+    font-style: italic;
+    margin-bottom: 1.3rem;
+}
+
+.slide-img-cont {
+    flex-grow: 1;
+    height: 350px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0.3rem;
+}
+
+.slide-img-1 {
+    background-image: url('../img/slide-1.jpg');
+}
+.slide-img-2 {
+    background-image: url('../img/slide-2.jpg');
+}
+.slide-img-3 {
+    background-image: url('../img/slide-3.jpg');
+}
+.slide-img-4 {
+    background-image: url('../img/slide-4.jpg');
+}
+
+.slide-img {
+    width: 100%;
+}
+
+.slide-icon-cont {
+    margin-top: 1.4rem;
+}
+
+.product {
+    padding: 4.5rem;
+}
+
+.product-cont {
+    height: 300px;
+    flex-grow: 1;
+    flex-basis: 33.33%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.product-cont img {
+    width: 100%;
+}
+
+.product-cont, .product-details {
+    padding: .5rem;
+}
+
+.product-details {
+    height: 300px;
+    flex-grow: 1;
+    flex-basis: 33.33%;
+}
+
+.product-details h4 {
+    font-size: 1.7rem;
+    font-weight: lighter;
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+.product-details .price-tag {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-details p {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.product-details button {
+    width: 150px;
+    padding: .7rem;
+    border-radius: 1.3rem;
+    background-color: #000;
+    color: #fff;
+    border: unset;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.product-details button:hover {
+    background-color: #e9b1b3;
+}
+
+.subscribe-img-cont, .subscribe-txt-cont {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    height: 130vh;
+}
+
+.subscribe-txt-cont {
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-img-cont {
+    background-image: url('../img/subscribe.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sub-head {
+    position: relative;
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.sub-head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: 8px;
+    background-color: #e9b1b3;
+}
+
+.input-cont input {
+    padding: .8rem 1rem;
+    margin: 1rem;
+}
+
+.input-cont {
+    width: 100%;
+    margin: auto;
+}
+
+.input-cont button {
+    width: 8rem;
+    padding: 0.7rem;
+    background-color: #000;
+    color: #fff;
+    border: unset;
+    border-radius: 1.3rem;
+}
+
+.input-cont button:hover {
+    background-color: #e9b1b3;
+}
+
+.sub-text {
+    font-size: .7rem;
+    font-weight: lighter;
+}
